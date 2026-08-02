@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — Cambridge University Biotech Society</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo-icon.png" alt="CUBS logo" class="logo-img">
+        Cambridge University Biotech Society
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="sponsorships.html">Sponsorships</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="https://lists.cam.ac.uk/sympa/subscribe/soc-cubiotech" target="_blank" rel="noopener noreferrer" class="btn-nav">Join Mailing List</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header events-header">
+    <h1>Events</h1>
+    <p>Talks, workshops, and networking — every week of term.</p>
+  </section>
+
+  <section class="section fade-in">
+    <h2>Upcoming Events</h2>
+    <p>Look out for our Michaelmas 2026 Term Card coming soon!</p>
+  </section>
+
+  <section class="gallery-section fade-in">
+    <h2>Past Events</h2>
+
+    <!-- Filter buttons — clicking one shows only that category -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="speaker">Speaker Series</button>
+      <button class="filter-btn" data-filter="networking">Networking</button>
+      <button class="filter-btn" data-filter="hackathon">Hackathon</button>
+      <button class="filter-btn" data-filter="collaboration">Collaboration</button>
+      <button class="filter-btn" data-filter="social">Social</button>
+    </div>
+
+    <div class="poster-grid" id="poster-grid">
+
+      <div class="poster-card" data-category="speaker">
+        <img src="event images/Screenshot 2026-07-14 at 23.48.25.png" alt="Prof Paul Dupree — Sustainable Food Engineering">
+        <div class="poster-card-body">
+          <span class="event-tag tag-speaker">Speaker Series</span>
+          <div class="poster-card-title">Prof Paul Dupree — Sustainable Food Engineering</div>
+          <div class="poster-card-date">23 October 2025</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="speaker">
+        <img src="event images/Miska poster.png" alt="Prof Eric Miska — RNA Modifying Enzymes">
+        <div class="poster-card-body">
+          <span class="event-tag tag-speaker">Speaker Series</span>
+          <div class="poster-card-title">Prof Eric Miska — RNA Modifying Enzymes</div>
+          <div class="poster-card-date">30 October 2025</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="speaker">
+        <img src="event images/PRESIDENT.png" alt="Prof Tuomas Knowles — How to Build a Successful Startup">
+        <div class="poster-card-body">
+          <span class="event-tag tag-speaker">Speaker Series</span>
+          <div class="poster-card-title">Prof Tuomas Knowles — How to Build a Successful Startup</div>
+          <div class="poster-card-date">19 November 2025</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="networking">
+        <img src="event images/18.png" alt="CUBS × Nucleate Networking Evening">
+        <div class="poster-card-body">
+          <span class="event-tag tag-networking">Networking</span>
+          <div class="poster-card-title">CUBS × Nucleate Networking Evening</div>
+          <div class="poster-card-date">1 December 2025</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="networking">
+        <img src="event images/19.png" alt="CUBS × Nucleate — Rebecca Martin">
+        <div class="poster-card-body">
+          <span class="event-tag tag-networking">Networking</span>
+          <div class="poster-card-title">CUBS × Nucleate — Rebecca Martin (Consulting)</div>
+          <div class="poster-card-date">1 December 2025</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="networking">
+        <img src="event images/20.png" alt="CUBS × Nucleate — Ruben Ruiz-Mateos Serrano">
+        <div class="poster-card-body">
+          <span class="event-tag tag-networking">Networking</span>
+          <div class="poster-card-title">CUBS × Nucleate — Ruben Ruiz-Mateos Serrano (Startup)</div>
+          <div class="poster-card-date">1 December 2025</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="speaker">
+        <img src="event images/rebecca.png" alt="Prof Rebecca Fitzgerald — Cancer Diagnostics">
+        <div class="poster-card-body">
+          <span class="event-tag tag-speaker">Speaker Series</span>
+          <div class="poster-card-title">Prof Rebecca Fitzgerald — Cancer Diagnostics</div>
+          <div class="poster-card-date">4 February 2026</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="hackathon">
+        <img src="event images/23.png" alt="Bio-Innovation Challenge">
+        <div class="poster-card-body">
+          <span class="event-tag tag-hackathon">Hackathon</span>
+          <div class="poster-card-title">Bio-Innovation Challenge — Food &amp; Water Security</div>
+          <div class="poster-card-date">28 February 2026</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="collaboration">
+        <img src="event images/OxBio main flyer.png" alt="OxBio Summit 2026">
+        <div class="poster-card-body">
+          <span class="event-tag tag-collaboration">Collaboration</span>
+          <div class="poster-card-title">OxBio Summit 2026</div>
+          <div class="poster-card-date">9 May 2026</div>
+        </div>
+      </div>
+
+      <div class="poster-card" data-category="social">
+        <img src="event images/garden party poster .jpeg" alt="Cambridge STEM Societies Garden Party">
+        <div class="poster-card-body">
+          <span class="event-tag tag-social">Social</span>
+          <div class="poster-card-title">Cambridge STEM Societies Garden Party</div>
+          <div class="poster-card-date">21 June 2026</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox overlay — appears when a poster is clicked -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="Event poster enlarged">
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.instagram.com/cubiotech/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://uk.linkedin.com/company/cubiotechsoc" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/cubiotech/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+    <p>&copy; 2026 Cambridge University Biotech Society. All rights reserved.</p>
+    <p style="margin-top:0.4rem; font-size:0.78rem; opacity:0.5;">Website designed and built by Justin Zhang</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
