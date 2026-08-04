@@ -882,12 +882,15 @@ body {
   .navbar {
     padding: 0.75rem 1.25rem;
   }
-  .logo-img {
-    width: 44px;
-    height: 44px;
+
+  /* ── Hero logo badge ── */
+  .hero-logo-badge {
+    width: 140px;
+    height: 140px;
   }
-  .logo-text {
-    display: none;
+  .hero-logo-img {
+    width: 120px;
+    height: 120px;
   }
 
   /* ── Nav — hamburger menu ── */
