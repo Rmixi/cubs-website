@@ -878,6 +878,18 @@ body {
     padding: 0.35rem 0.8rem;
   }
 
+  /* ── Navbar ── */
+  .navbar {
+    padding: 0.75rem 1.25rem;
+  }
+  .logo-img {
+    width: 44px;
+    height: 44px;
+  }
+  .logo-text {
+    display: none;
+  }
+
   /* ── Nav — hamburger menu ── */
   .hamburger {
     display: flex;
