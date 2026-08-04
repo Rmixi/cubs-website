@@ -1,11 +1,11 @@
 :root {
-  --cubs-green-dark: #1b4332;
-  --cubs-green: #2d6a4f;
-  --cubs-green-light: #40916c;
+  --cubs-green-dark: #0d1b2a;
+  --cubs-green: #1b3a5c;
+  --cubs-green-light: #0e7c86;
   --text-dark: #1a1a1a;
   --text-muted: #555;
-  --bg-subtle: #f6f9f7;
-  --border: #e0e8e4;
+  --bg-subtle: #f0f8f9;
+  --border: #c8e0e4;
 }
 
 * {
@@ -709,7 +709,7 @@ body {
   margin-bottom: 0.4rem;
 }
 
-.tag-speaker     { background: #d1fae5; color: #065f46; }
+.tag-speaker     { background: #d0f4f7; color: #0e7c86; }
 .tag-networking  { background: #dbeafe; color: #1e40af; }
 .tag-hackathon   { background: #ede9fe; color: #5b21b6; }
 .tag-collaboration { background: #fef3c7; color: #92400e; }
@@ -882,6 +882,13 @@ body {
 }
 
 /* ── Footer ── */
+.footer-logo-text {
+  display: block;
+  margin: 0 auto 1.25rem;
+  height: 120px;
+  width: auto;
+}
+
 footer {
   text-align: center;
   padding: 2rem;
