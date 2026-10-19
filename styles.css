@@ -258,6 +258,132 @@ body {
   color: var(--cubs-green-light);
 }
 
+/* ── Next talk ── */
+.next-talk-card {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.next-talk-poster {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.next-talk-poster:hover {
+  transform: translateY(-4px);
+}
+
+.next-talk-poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.next-talk-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--cubs-green-light);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 0.9rem;
+}
+
+.section .next-talk-details h2 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.section .next-talk-speaker {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--cubs-green);
+  margin-bottom: 0.75rem;
+}
+
+.next-talk-bio,
+.next-talk-meta {
+  list-style: none;
+  padding: 0;
+}
+
+.next-talk-bio li {
+  position: relative;
+  padding-left: 1rem;
+  color: #444;
+  font-size: 0.98rem;
+  margin-bottom: 0.3rem;
+}
+
+.next-talk-bio li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cubs-green-light);
+}
+
+.next-talk-meta {
+  margin-top: 1.1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--border);
+}
+
+.next-talk-meta li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 0.35rem;
+}
+
+.next-talk-meta i {
+  width: 1rem;
+  color: var(--cubs-green-light);
+}
+
+.section .next-talk-note {
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .next-talk-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.25rem;
+  }
+  .next-talk-poster {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section .next-talk-details h2 {
+    font-size: 1.6rem;
+  }
+  .next-talk-details .btn-cta {
+    display: block;
+    text-align: center;
+  }
+}
+
 /* ── Term card ── */
 .term-card-link {
   display: block;
