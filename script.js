@@ -14,6 +14,13 @@ if (hamburger) {
   });
 }
 
+// Membership promo: shown until the end of 23 October 2026, UK time
+const PROMO_END = new Date("2026-10-24T00:00:00+01:00");
+if (new Date() < PROMO_END) {
+  document.querySelectorAll(".promo-only").forEach(el => el.hidden = false);
+  document.querySelectorAll(".no-promo").forEach(el => el.hidden = true);
+}
+
 // Smooth scroll for same-page anchor links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", (event) => {

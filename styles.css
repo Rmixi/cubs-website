@@ -258,6 +258,85 @@ body {
   color: var(--cubs-green-light);
 }
 
+[hidden] {
+  display: none !important;
+}
+
+/* ── Membership promo ── */
+.promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding: 0.9rem 1.5rem;
+  background: var(--cubs-green-light);
+  color: #fff;
+  text-align: center;
+}
+
+.promo-text {
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.promo-text s {
+  opacity: 0.7;
+}
+
+.promo-tag {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--cubs-green-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
+}
+
+.promo-ref {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.promo-btn {
+  flex-shrink: 0;
+  background: #fff;
+  color: var(--cubs-green-dark);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.55rem 1.4rem;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.promo-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .promo-banner {
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+  }
+  .promo-text {
+    font-size: 0.9rem;
+  }
+  .promo-ref {
+    font-size: 0.75rem;
+  }
+}
+
+.membership-old-price {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
 /* ── Next talk ── */
 .next-talk-card {
   display: grid;
